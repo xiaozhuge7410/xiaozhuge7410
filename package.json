@@ -1,0 +1,43 @@
+{
+  "name": "IGymCoach",
+  "version": "0.0.1",
+  "description": "IGymCoach",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp dev",
+    "dev": "gulp dev",
+    "clean": "rimraf dist",
+    "build": "rimraf dist && gulp build"
+  },
+  "keywords": [
+    "IGymCoach"
+  ],
+  "author": "JoyceSong",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-md5-plus": "^1.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "gulp-webpack": "^1.5.0",
+    "jsonfile": "^3.0.0",
+    "uglify": "^0.1.5",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "highcharts": "^5.0.14"
+  }
+}

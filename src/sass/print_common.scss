@@ -1,0 +1,154 @@
+.userinfo-detail,.userinfo-chart,.userinfo-remark,.logo{
+    overflow:hidden;
+}
+.logo{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.sport-report{
+    display:inline;
+    font-size:16px;
+}
+.head-data{
+    font-weight:normal !important;
+    margin:0 5px;
+    font-size:12px;
+}
+.motion-data{
+    border:1px solid #707070;
+    height:72px;
+    padding:10px;
+}
+.motion-data>h3{
+    color:#222;
+    font-size:16px;
+}
+.motion-data>i{
+    display:block;
+    border-bottom:1px solid #E8E8E8;
+    margin:2px 0 5px 0;
+}
+.time-data{
+    float:left;
+    width:30%;
+    height:50px;
+}
+.aerobic-capacity{
+    float:right;
+    width:69%;
+    height:50px;
+}
+.time-data p{
+    line-height:24px;
+}
+.aerobic-capacity p{
+    line-height:24px;
+}
+.time-data{
+    color:#222;
+    border-right:1px solid #E8E8E8;
+}
+.userinfo-detail-list{
+    height:70px;
+}
+.userinfo-remark{
+    margin-top:10px;
+    border:1px solid #333;
+}
+.portlet-title{
+    margin:7px 15px;
+}
+.caption-subject{
+    font-size:16px;
+    color:#222;
+    margin-bottom:5px;
+}
+.portlet-title i{
+    display:block;
+    border-bottom:1px solid #E8E8E8;
+}
+.start-Date,.continue-dada,.max-oxygen,.aerobic-power{
+    font-weight:bold;
+}
+
+.heart-rate p:nth-child(1){
+    display:inline-block;
+    width:45%;
+    line-height:35px;
+    margin-left:30px;
+}
+.heart-rate p:nth-child(2){
+    display:inline-block;
+    width:45%;
+}
+.average-value,.max-value{
+    font-weight:bold;
+}
+.risk-remark{
+    margin:10px;
+}
+.risk-remark ul li{
+    line-height:22px;
+}
+.risk-remark ul{
+    margin-left:30px;
+}
+.risk-remark>h4{
+    margin:10px 0 10px 30px;
+}
+.active{
+    font-weight:bold;
+    font-size:15px;
+}
+.heart-rate{
+    width:95%;
+    background:#f3f3f3;
+    height:35px;
+    margin:0 auto;
+}
+.aerobic-capacity i{
+    font-style:normal;
+}
+.risk-remark i{
+    font-style:normal;
+}
+.risk-remark span{
+    display:inline-block;
+    width:80px;
+}
+.aerobic-capacity .tall{
+    font-weight:bold;
+}
+.report-interpretation{
+    border:1px solid #333;
+    margin-top:10px;
+    padding:10px;
+    height:200px;
+    h6{
+        font-size: 16px;
+        line-height: 18px;
+        padding: 5px 0;
+        color: #000;
+        font-weight:700;
+    }
+    i{
+        display:block;
+        width:100%;
+        border-bottom:1px solid #E8E8E8;
+    }
+}
+.echarts-icon{
+    margin-left:20px;
+    margin-bottom:20px;
+    margin-top:10px;
+    >div{
+        display:inline-block;
+        width:100px;
+    }
+    div{
+        span{
+            margin-left:15px;
+            font-weight:bold;
+        }
+    }
+}

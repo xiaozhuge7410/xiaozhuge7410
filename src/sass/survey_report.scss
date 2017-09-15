@@ -1,0 +1,427 @@
+$black:#333;
+$green:#00A6B4;
+$lightGreen:#E4EEEE;
+$gray:#BEBEBE;
+$lightGray:#E3E3E3;
+
+input{
+  &::-webkit-input-placeholder{
+    color:$lightGray;
+  }
+  &::-moz-placeholder{
+    color:$lightGray;
+  }
+  &:-ms-input-placeholder{
+    color:$lightGray;
+  }
+}
+.page-head{
+  margin:10px 0 0 10px;
+  ul{
+    float:left;
+    li{
+      float:left;
+
+      a{
+        color:#00A6B4;
+        font-size:16px;
+      }
+      span{
+        font-size:16px;
+      }
+      i{
+        margin:0 5px;
+      }
+    }
+  }
+  .page-btn{
+    float:right;
+    .page-compile{
+      border:none;
+      border:1px solid #00A6B4;
+      background:#fff;
+      color:#00A6B4;
+      width:66px;
+      height:40px;
+      border-radius: 5px;
+      &:hover{
+        color:#fff;
+        background:#00A6B4;
+      }
+    }
+  }
+  .page-off{
+    float:right;
+    display:none;
+    button{
+      border:none;
+      border:1px solid #00A6B4;
+      background:#fff;
+      color:#00A6B4;
+      width:66px;
+      height:40px;
+      border-radius: 5px;
+      &:hover{
+        color:#fff;
+        background:#00A6B4;
+      }
+    }
+    .page-call{
+      margin-right:10px;
+      &:hover{
+        color:#fff;
+        background:#00A6B4;
+      }
+    }
+  }
+}
+.questionnaire-data{
+  margin-left:7px;
+  font-weight:500;
+  font-size:15px;
+  p{
+    display:inline-block;
+    margin-right:13px;
+  }
+}
+.clinic-header{
+   color:#222;
+   border:1px solid #bebebe;
+   padding-bottom:20px;
+  .red{
+    color:red;
+    margin:0 5px 0 0;
+  }
+  .keep-right{
+    display:inline-block;
+    width:137px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .clinic-data{
+    ul{
+      margin-top:10px;
+      li{
+        float:left;
+        line-height:60px;
+        width:50%;
+      }
+    }
+  }
+  .ordinary-header{
+    >p{
+       margin:0 0 20px 0 !important;
+       line-height: 35px !important;
+       margin-left: 30px !important;
+    }
+  }
+  .clinic-data{
+      .basic{
+        margin:25px 25px 0 25px;
+        .wire-left{
+          border-top:1px solid #E7E7E7;
+          display:inline-block;
+          width:40px;
+          margin-bottom:5px;
+          margin-right:7px;
+        }
+        .wire-right{
+          border-top:1px solid #E7E7E7;
+          display:inline-block;
+          width:92%;
+          margin-bottom:5px;
+          margin-left:7px;
+        }
+        h5{
+          display:inline-block;
+          color:#00A6B4;
+          font-size:16px;
+        }
+      }
+  }
+}
+.daterange{
+  position:relative;
+  display:inline-block;
+  input{
+    border-color:$gray;
+    width:250px !important;
+    color:#707070;
+    &::-webkit-input-placeholder{
+      color:#DFDFDF;
+    }
+    &::-moz-placeholder{
+      color:#DFDFDF;
+    }
+    &:-ms-input-placeholder{
+      color:#DFDFDF;
+    }
+  }
+  i.fa-calendar{
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    top: auto;
+    cursor: pointer;
+    color:#C5C5C5;
+  }
+  i.fa-close{
+    display:none;
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+    top: auto;
+    cursor: pointer;
+    color:#C5C5C5;
+    z-index:99;
+  }
+}
+.patient-mark{
+  position:relative;
+  .patient-number{
+    height:35px;
+    border:none;
+    border:1px solid #BEBEBE;
+    border-radius:3px;
+    padding:0 0 0 10px;
+    width:244px;
+  }
+  b{
+    font-weight: normal;
+    color:red;
+    position:absolute;
+    top:30px;
+    left:145px;
+    display:none;
+  }
+  p{
+    display:inline-block;
+  }
+}
+.select2-selection{
+  width:250px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+  height: 40px;
+  right: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear{
+  margin-right:10px;
+}
+.select2-container{
+  width: 250px !important;
+  .select2-dropdown{
+    width:250px;
+  }
+}
+.ordinary-message{
+  .ordinary-header{
+    height:35px;
+    background: #00A6B4;
+    p{
+      color:#fff;
+      line-height:35px;
+      margin-left:30px;
+    }
+  }
+  .ordinary-body{
+    padding:20px 0 20px 26px;
+    //border:1px solid #BEBEBE;
+    >ul{
+      >li{
+        position: relative;
+        float:left;
+        width:50%;
+        //height:55px;
+        margin-top:15px;
+        margin-bottom:10px;
+        i{
+          color: red;
+          margin: 0 5px 0 0;
+        }
+        input{
+          height:40px;
+          border:none;
+          border:1px solid #BEBEBE;
+          border-radius:3px;
+          padding:0 0 0 10px;
+          width:249px;
+        }
+        >span{
+          display: inline-block;
+          width: 137px;
+          text-align: right;
+          margin-right: 10px;
+        }
+        >b{
+          font-weight: 400;
+          color: red;
+          position: absolute;
+          top: 38px;
+          left: 145px;
+          display:none;
+        }
+      }
+      label{
+        margin-right:20px !important;
+      }
+    }
+    .evidence{
+      display:inline-block;
+      width:230px;
+      text-align:right;
+      font-size:15px;
+      margin:7px 15px 7px 0;
+    }
+    .ordinary-body-body{
+      margin:10px 0;
+    }
+    .family-history1{
+      .select2-selection{
+        width:400px!important;
+      }
+      .select2-container{
+        width:400px!important;
+      }
+    }
+    ul li.family-history{
+      width:100%;
+      .select2-selection{
+        width:400px;
+      }
+      .select2-container--default .select2-selection--single .select2-selection__arrow{
+        height: 40px;
+        right: 0px;
+      }
+      .select2-container--default .select2-selection--single .select2-selection__clear{
+        margin-right:10px;
+      }
+      .select2-container{
+        width:400px!important;
+        .select2-dropdown{
+          width:400px;
+        }
+      }
+      .hint-13{
+        vertical-align: top;
+        color:red;
+        margin-left:7px;
+        font-style:normal;
+        display:none;
+      }
+    }
+    li.remark{
+      height:auto;
+      .remark-character{
+        float:left;
+      }
+    }
+    a{
+      color:#333;
+      text-decoration: none;
+      cursor:default;
+    }
+  }
+  }
+.bmi{
+  color:#333;
+  text-decoration: none;
+  cursor:default;
+}
+.bmi:hover{
+  color:#333;
+  text-decoration: none;
+  cursor:default;
+}
+textarea{
+    border-radius:3px;
+    height:150px;
+    border:1px solid #BEBEBE;
+    max-width:1200px;
+    max-height:600px;
+}
+textarea[disabled]{
+  background: #f7f7f7!important;
+}
+.select2-selection{
+  //height:auto;
+}
+.select2-selection__choice{
+  height:40px !important;
+  margin:0 !important;
+  margin-top:1px !important;
+}
+.select2-container .select2-search--inline .select2-search__field{
+   margin-top:0 !important;
+}
+.select2-selection__clear{
+  margin-top:0 !important;
+}
+.form-control{
+  padding:7px !important;
+}
+select[disabled] +.select2 .select2-selection--single,
+select[disabled] +.select2 .select2-selection--multiple{
+  background: #f7f7f7 !important;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+  background: #f7f7f7 !important;
+}
+button[disabled], html input[disabled]{
+  background: #f7f7f7 !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+  height: 30px !important;
+  margin-top: 7px !important;
+  line-height: 30px !important;
+  margin-right:5px !important;
+  background: #f7f7f7 !important;
+}
+.phone-margin{
+  margin:0 !important;
+}
+.select2-search__field{
+  //width:0em !important;
+}
+.select2-selection__clear{
+  display:none;
+}
+.big-body{
+  border:1px solid #bebebe;
+  margin-top:20px;
+  .ordinary-header{
+    >p{
+      margin:0;
+      line-height:35px;
+      margin-left:30px;
+    }
+  }
+  .or-header{
+      margin:0 70px;
+    p{
+      color:#00A6B4;
+      font-size:16px;
+      margin:0 !important;
+    }
+    i{
+      display:block;
+      width:100%;
+      border-bottom:1px solid #00A6B4;
+    }
+  }
+}
+
+.select2-container .select2-selection--single{
+  height:40px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+  line-height:40px!important;
+}
+.a-style{
+  color:#333;
+}
+.a-style:hover{
+  text-decoration:none;
+  cursor: default;
+  color:#333;
+}

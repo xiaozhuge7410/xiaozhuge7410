@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>GETWELL科研测试管理系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/print_common_style.css">
+    <link rel="stylesheet" href="../../css/print_rockport.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico"/>
+    <link rel="bookmark" href="../../img/favicon.ico"/>
+</head>
+
+<body>
+<div class="page-container">
+    <div class="logo">
+        <img src="../../img/newlogo@1.5x.png" alt="">
+    </div>
+    <div class="userinfo-detail">
+        <div class="head-portrait clearfix">
+            <div style="float:left;">
+            <img src="" alt="">
+            <h3 class="sport-report">Rockport测试报告</h3>
+            <span class="head-data"></span>
+            </div>
+            <div style="float:right;">
+            <span class="device-number"></span>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="userinfo-detail-list clearfix">
+                <li>
+                    <h4>客户ID</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>姓名</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>性别</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>年龄</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>省市</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>身高</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>体重</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>提交次数</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>最近提交</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>注册时间</h4>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <div class="content-box-title">有氧能力</div>
+        <div class="content-body">
+            <ul class="exdata-summary">
+                <li class="smxo2-summary">
+                    <span></span>
+                    <span class="exdata-unit">MET</span>
+                    <span class="exdata-detail">有氧能力</span>
+                    <span class="exdata-separater"> / </span>
+                    <span class="exdata-eva"></span>
+                </li>
+                <li>
+                    <ul class="exdata-summary-allin col-5 clearfix">
+                        <li>
+                            <h3></h3>
+                            <p>开始时间</p>
+                        </li>
+                        <li>
+                            <h3></h3>
+                            <p>基准水平</p>
+                        </li>
+                        <li>
+                            <h3></h3>
+                            <p>测试时长</p>
+                        </li>
+                        <li>
+                            <h3></h3>
+                            <p>平均速度</p>
+                        </li>
+                        <li>
+                            <h3></h3>
+                            <p>结束心率</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="content-box-title">
+            测试评价
+        </div>
+        <div class="clearfix">
+            <ul class="ability-list col-md-12">
+                <li>
+                    <h3>最大摄氧量</h3>
+                    <ul class="ability-bar">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>身体在极限情况下利用氧的能力</p>
+                    <div class="ability-detail">
+                        <h4>你的最大摄氧量为 <span class="ability-vo2max"></span> ml/kg·min</h4>
+                        <p></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="risk-summary clearfix" style="padding-top:0;">
+            <div class="col-md-6" style="width:50%;">
+                <h3>重大风险</h3>
+                <div class="risk-bar">
+                    <i></i>
+                </div>
+            </div>
+            <div class="risk-summary-detail col-md-12">
+                <span>出现重大风险的概率</span><span class="high-or-low"></span>
+                <span class="risk-percent">
+                            <img src="">
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="content-box-title">
+            肌氧&心率曲线
+        </div>
+        <div class="portlet-body clearfix">
+            <div id="echarts_mix1" style="height:200px;"></div>
+            <div class="echarts-icon">
+                <div>
+                    <img src="../../img/tuli1.png" alt=""><span>肌氧</span>
+                </div>
+                <div>
+                    <img src="../../img/tuli2.png" alt=""><span>心率</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="report-interpretation">
+    <h6>报告解读</h6>
+    <i></i>
+    <p class="report-content"></p>
+</div>
+<script src="../../plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../plugins/crypto-js.min.js" type="text/javascript"></script>
+<script src="../../plugins/echarts/echarts.min.js"></script>
+<script src="../../js/commonDom.js" type="text/javascript"></script>
+<script src="../../js/print_rockport.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

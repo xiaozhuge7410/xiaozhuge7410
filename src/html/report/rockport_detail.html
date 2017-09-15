@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>GETWELL科研测试管理系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/aerobic_detail.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../../img/favicon.ico"/>
+    <link rel="bookmark" href="../../img/favicon.ico"/>
+</head>
+
+<body>
+<div class="page-header navbar navbar-fixed-top"></div>
+<div class="page-container">
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar"></div>
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="rockport.html">运动报告管理</a>
+                </li>
+                <li>
+                    <a href="rockport.html">Rockport测试报告</a>
+                </li>
+                <li>
+                    <span class="active">报告详情</span>
+                </li>
+            </ul>
+            <h3></h3>
+
+            <div class="view-info-history">
+                <!--<a href="../customer/survey_report.html"  class="compile" style="display:none;margin-right:5px;">新建问卷</a>-->
+                <!--<a href="../customer/Survey_report_detail.html" class="examine" style="display:none;margin-right:5px;">查看问卷</a>-->
+                <div class="check-more">
+                    更多
+                    <i class="down-array"></i>
+                    <ul>
+                        <li>
+                            <a href="../customer/info_history.html">全部报告</a>
+                        </li>
+                        <li>
+                            <span data-toggle="modal" data-target="#rewriteModal">编辑报告备注</span>
+                        </li>
+                        <li>
+                            <a  class="print" target="_blank" href="../print-report/rockport_report.html">打印报告</a>
+                        </li>
+                        <li class="origin-data-download-ct">
+                            <a class="origin-data-download" href="#" download="">下载原始数据</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row userinfo-row">
+                <div class="userinfo-detail col-md-12 ">
+                    <ul class="userinfo-detail-list col-md-12">
+                        <li class="userinfo-avatar">
+                            <img src="">
+                        </li>
+                        <li>
+                            <h4>客户ID</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>姓名</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>性别</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>年龄</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>省市</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>身高</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>体重</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>提交次数</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>最近提交</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <h4>注册时间</h4>
+                            <p></p>
+                        </li>
+                    </ul>
+                    <div class="userinfo-remark clearfix">
+                        <h4>客户备注：</h4>
+                        <p></p>
+                    </div>
+                    <div class="reportinfo-remark clearfix">
+                        <h4>报告备注：</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row hardware-equipment">
+                <div class="col-md-12">
+                    <div class="portlet-title">
+                        <h3>硬件设备号</h3>
+                        <i></i>
+                    </div>
+                    <div class=" device-data">
+                        <i></i>
+                        <p class="device-number"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="portlet">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <span class="caption-subject bold">有氧能力</span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <ul class="exdata-summary">
+                        <li class="smxo2-summary">
+                            <span></span>
+                            <span class="exdata-unit">MET</span>
+                            <span class="exdata-detail">有氧能力</span>
+                            <span class="exdata-separater"> / </span>
+                            <span class="exdata-eva"></span>
+                        </li>
+                        <li>
+                            <ul class="exdata-summary-allin col-5 clearfix">
+                                <li>
+                                    <h3></h3>
+                                    <p>开始时间</p>
+                                </li>
+                                <li>
+                                    <h3></h3>
+                                    <p>基准水平</p>
+                                </li>
+                                <li>
+                                    <h3></h3>
+                                    <p>测试时长</p>
+                                </li>
+                                <li>
+                                    <h3></h3>
+                                    <p>平均速度</p>
+                                </li>
+                                <li>
+                                    <h3></h3>
+                                    <p>结束心率</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="portlet">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <span class="caption-subject bold">测试评价</span>
+                    </div>
+                </div>
+                <div class="portlet-body clearfix">
+                    <ul class="ability-list col-md-12">
+                        <li>
+                            <h3>最大摄氧量</h3>
+                            <ul class="ability-bar">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <p>身体在极限情况下利用氧的能力</p>
+                            <div class="ability-detail">
+                                <h4>你的最大摄氧量为 <span class="ability-vo2max"></span> ml/kg·min</h4>
+                                <p></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="portlet-body risk-summary clearfix" style="padding-top:0;">
+                    <div class="col-md-6">
+                        <h3>重大风险</h3>
+                        <div class="risk-bar">
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="risk-summary-detail col-md-12">
+                        <span>出现重大风险的概率</span><span class="high-or-low"></span>
+                        <span class="risk-percent">
+                            <img src="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="portlet">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <span class="caption-subject bold">肌氧&心率曲线</span>
+                    </div>
+                    <!--<div class="chart-tools" data-toggle="modal" data-target="#myModal">-->
+                        <!--<i class="fa fa-cog"></i>-->
+                    <!--</div>-->
+                </div>
+                <div class="portlet-body clearfix">
+                    <div style="border:1px solid #e7e7e7;margin:0 16px 20px 16px;">
+                        <div id="echarts_mix1" style="height:400px;"></div>
+                        <div class="echarts-icon">
+                            <div>
+                                <img src="../../img/tuli1.png" alt=""><span>肌氧</span>
+                            </div>
+                            <div>
+                                <img src="../../img/tuli2.png" alt=""><span>心率</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="report-interpretation">
+                <p>报告解读</p>
+                <textarea class="unscramble" style="width:100%"></textarea>
+                <span class="verify-report" style="color:red"></span>
+                <div class="page-submit">
+                    <span class="hint-character"></span>
+                    <div class="page-off">
+                        <button class="page-call btn btn-default">取消</button>
+                        <button class="page-save btn btn-default">保存</button>
+                    </div>
+                    <div class="page-btn">
+                        <button class="page-compile btn btn-default">编辑</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">修改Y轴数值范围</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="y-range-selector clearfix">
+                            <div class="smo2-range-selector">
+                                <h4>肌氧Y轴数值范围：</h4>
+                                <p>
+                                    <span>起始值：</span>
+                                    <input class="form-control smo2-start" type="text" placeholder="0-100" maxlength="3">
+                                </p>
+                                <p>
+                                    <span>终止值：</span>
+                                    <input class="form-control smo2-end" type="text" placeholder="0-100" maxlength="3">
+                                </p>
+                            </div>
+                            <div class="hr-range-selector">
+                                <h4>心率Y轴数值范围：</h4>
+                                <p>
+                                    <span>起始值：</span>
+                                    <input class="form-control hr-start" type="text" placeholder="0-200" maxlength="3">
+                                </p>
+                                <p>
+                                    <span>终止值：</span>
+                                    <input class="form-control hr-end" type="text" placeholder="0-200" maxlength="3">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="type-error-alert"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-modal-big-default reset-y-btn">重置</div>
+                        <div class="btn-modal-big-primary change-y-btn">修改</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="rewriteModal" tabindex="-1" role="dialog" aria-labelledby="rewriteModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="rewriteModalLabel">编辑报告备注</h4>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control report-remarks" style="height:150px;max-width:100%;"></textarea>
+                        <div class="rewrite-error-alert"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-modal-big-default" data-dismiss="modal">取消</div>
+                        <div class="btn-modal-big-primary rewrite-report-remarks-btn">修改</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer"></div>
+    </div>
+</div>
+
+<script src="../../plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+<script src="../../plugins/crypto-js.min.js" type="text/javascript"></script>
+<script src="../../js/commonDom.js" type="text/javascript"></script>
+<script src="../../plugins/echarts/echarts.min.js"></script>
+<script src="../../js/rockport_detail.js" type="text/javascript"></script>
+
+</body>
+
+</html>
